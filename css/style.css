@@ -1,0 +1,46 @@
+
+
+
+
+
+h1 {font-family: 'Raleway', sans-serif; }
+
+.jumbotron{ background-color:transparent;}
+
+#question {font-family: 'Cormorant Garamond', serif; font-size: 2em; }
+
+#next { 
+    position: static;
+    margin:100px 50px;
+    }
+
+#submit { 
+    position: static;
+    margin:100px 50px;
+    }
+    
+#industry { 
+	position: static;
+	margin-left: 7em;
+	margin-right: 7em;}
+
+#skillset { 
+	
+	}
+
+#skill {
+	text-align:left;
+}
+
+.container-fluid {
+	margin:1.2em;
+
+}
+
+#addskill {
+	margin-left: auto;
+}
+
+#current {
+	
+}
