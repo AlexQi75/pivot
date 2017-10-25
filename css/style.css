@@ -5,6 +5,22 @@
 
 h1 {font-family: 'Raleway', sans-serif; }
 
+
+#taketest {font-family: 'Cormorant Garamond', serif; 
+		   font-size: 1.5em; 
+		   position:block;
+		   text-align: center;
+		   margin-top:5em;
+}
+
+
+#bighead { text-align:center;
+			margin-top:5em;
+			margin-bottom:18em;
+}
+
+
+
 .jumbotron{ background-color:transparent;
 			padding-top:4em;
 
@@ -16,10 +32,15 @@ h1 {font-family: 'Raleway', sans-serif; }
 }
 
 #question {font-family: 'Cormorant Garamond', serif; 
-		   font-size: 2em; 
-		   padding-left:2em;
-		   padding-right:2em;
+		   font-size: 1.5em; 
+		   padding-left:1em;
+		   padding-right:1em;
 		}
+
+#start { 
+    position: static;
+    margin:100px 50px;
+    }
 
 #next { 
     position: static;
@@ -58,3 +79,34 @@ h1 {font-family: 'Raleway', sans-serif; }
 #current {
 	
 }
+
+#match {
+	text-align:left;
+	position:center;
+	background-color:transparent;
+	margin-top: 2em;
+
+}
+
+#gopivot {
+	position: static;
+    margin:100px 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
