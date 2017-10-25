@@ -17,6 +17,7 @@ $(function(){
     var q3 = "What do you like about your current job?";
     var q4 = "What do you expect for your next job?";
     var q5 = "What current skills you wish to use for next job?";
+    var q6 = "industries that you have over 50% compatibility to pivot into:"
     
     // change progress bar to 30%
     $("#next").on('click',function(){
@@ -96,6 +97,7 @@ $("#submit").on('click',function(){
      $("#submit").hide();
      $(".progress").hide();
      $("#wish").hide();
+     $("#question").text("Industries that you have over 50% compatibility to pivot into:");
  });
 
 $(function(){
