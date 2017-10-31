@@ -1,11 +1,29 @@
 // get scripting
 
-$("button").on('click',function(){
-     ;
- });
+$(function(){ // DON'T TOUCH ME
 
-$(function(){
+    $("#start").on('click',function(){
+        $("#taketest").hide(); 
+        $(".jumbotron").fadeIn(); 
+        $("#bar").fadeIn(); 
+        $("#question").fadeIn();
+        $("#skillset").fadeIn();
+        $(this).hide();
+        $("#next").fadeIn();
+        $("#bighead").hide();
+
+
+    });
+
+    $(".jumbotron").hide(); 
+    $("#bar").hide(); 
+    $("#question").hide(); 
+    $("#next").hide(); 
+    $("#industry").hide();
+
+
    
+
     $("#skillset").hide();  
     $("#current").hide();  
     $("#expect").hide();  
@@ -17,6 +35,7 @@ $(function(){
     var q3 = "What do you like about your current job?";
     var q4 = "What do you expect for your next job?";
     var q5 = "What current skills you wish to use for next job?";
+    var q6 = "industries that you have over 50% compatibility to pivot into:"
     
     // change progress bar to 30%
     $("#next").on('click',function(){
@@ -73,35 +92,26 @@ $(function(){
         }
         
     });
-    
-})
 
-$(function(){
+    $("#match").hide(); 
+    $("#gopivot").hide();
 
-})
+    $(".dropdown-menu li a").click(function(){
+        $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+        $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+    });
 
+    $("#submit").on('click',function(){
+         $("#submit").hide();
+         $(".progress").hide();
+         $("#wish").hide();
+         $("#question").text("Industries that you have over 50% compatibility to pivot into:");
+         $("#match").fadeIn();
+         $("#gopivot").fadeIn();
+     });
 
+}); // DONT' TOUCH ME
 
-
-$(".dropdown-menu li a").click(function(){
-  $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
-  $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
-});
-
-
-
-
-
-$("#submit").on('click',function(){
-     $("#submit").hide();
-     $(".progress").hide();
-     $("#wish").hide();
- });
-
-$(function(){
-
-
-})
 
 
 
