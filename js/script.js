@@ -7,12 +7,16 @@ $(function(){ // DON'T TOUCH ME
         $(".jumbotron").fadeIn(); 
         $("#bar").fadeIn(); 
         $("#question").fadeIn();
-        $("#skillset").fadeIn();
+        $("#industry").fadeIn();
         $(this).hide();
         $("#next").fadeIn();
         $("#bighead").hide();
 
 
+    });
+
+    $("#gopivot").on("click",function(){
+        window.location.href = "main.html"; 
     });
 
     $(".jumbotron").hide(); 

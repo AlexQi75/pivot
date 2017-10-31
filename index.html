@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>PIVOT Prototype</title>
+    <title>PIVOT TEST</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Raleway" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,146 +20,339 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Raleway" rel="stylesheet">
-  <style>
-
-  h1 {
-    font-family:'Raleway', sans-serif;
-    font-size: 60px;
-    text-align: center;
-  }
-  h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size: 40px;
-    text-align: left;
-    margin: 54px 1px 54px 1px;
-  }
-  h3{
-    font-family:'Cormorant Garamond', serif;
-    font-size: 30px;
-    text-align: center;
-  }
-  .icon-bar {
-    width: 100%; /* Full-width */
-    background-color: #8491a3; /* Dark-grey background */
-    overflow: auto; /* Overflow due to float */
-}
-
-.icon-bar a {
-    float: left; /* Float links side by side */
-    text-align: center; /* Center-align text */
-    width: 25%; /* Equal width (5 icons with 20% width each = 100%) */
-    padding: 12px 0; /* Some top and bottom padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font size */
-}
-
-.icon-bar a:hover {
-    background-color: #000 /* Add a hover color */
-}
-
-.active {
-    background-color: #8491a3; /* Add an active/current color */
-}
-.caption{
-    background: none repeat scroll 0 0 #FFFFFF;
-    opacity: 0.4;
-    margin: -84px 20px 12px; 
-    position:relative;
-}
-.thumbnail{
-  position:relative;
-  margin: 54px 20px 12px;
-}
-.btn-circle.btn-lg {
-  width: 50px;
-  height: 50px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 25px;
-  float: right;
-}
-</style>
   <body>
-    <div class="row">
-  <div class="col-xs-6"></div>
-  <div class="col-xs-6"></div>
-</div>
-</div>
-<div class= "page-header">
-    <div class= "btn-group pull-right">
-    <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-user"></i></button>
+    
+     <div id="taketest">
+        Take a test to start your personalized
+     </div>
+
+    <div class="jumbotron text-center">
+    <h1>PIVOT TEST</h1>
     </div>
-    <h1> PIVOT</h1>
-  </div>
-  <div class= "second title">
-    <h2> Recently Published </h2>
-  </div>
-    <div class="row">
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <img src="journalism.jpg"/>
-      <div class="caption">
-      <h3>Six Things Journalists Don't Tell You</h3>
+
+    <div id="bighead">
+    <div>
+    <h1>PIVOT</h1>
+    </div>
+    </div>
+
+
+     <div id="bar">
+      <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="20"
+          aria-valuemin="0" aria-valuemax="100" style="width:20%">
+              <span class="sr-only">20% Complete</span>
+          </div>
       </div>
      </div>
-    </div>  
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <img src="Write three.jpg" />
-      <div class="caption">
-      <h3>Are You Actually a Writer?</h3>
-      </div>
-    </div>
-    </div>  
-</div>
- <div class="row">
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <img src="Cheryl.jpg" />
-      <div class="caption">
-        <h3>A Boston's Book Editor's Advice</h3>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <img src="Book one.png" />
-    <div class="caption">
-      <h3>Is Freelance Right for You?</h3>
-      </div>
-    </div>
-    </div> 
-</div>
- <div class="row">
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <img src="Nick Kokonas.jpeg" />
-      <div class="caption">
-        <h3>Get Inside with Nick Kokonas</h3>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <img src="collaboration.jpg" />
-      <div class="caption">
-      <h3>The One Skill Product Managers Need</h3>
-      </div>
-    </div>
-    </div>  
-</div>
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-home"></i></a> 
-  <a href="#"><i class="fa fa-globe"></i></a> 
-  <a href="#"><i class="fa fa-search"></i></a> 
-  <a href="#"><i class="fa fa-user"></i></a>
-</div>
+   
+
+
+
+
+
+
+    <div id="question">
+        What industry are you currently working in?
+    </div>
+    
+    <div id="industry">
+     <div class="dropdown"> 
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose industry
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+    <li><a href="#" data-value="Journalism">Journalism</a></li>
+    <li><a href="#" data-value="Public Relationship">Public Relationship</a></li>
+    <li><a href="#" data-value="Advertising">Advertising</a></li>
+    </ul>
+    </div>
+    </div>
+ 
+
+    <div id="skillset">
+    <div class="container-fluid">  
+      <div class ="row">
+
+     <div id="skill">   
+        <div class="col-xs-8">
+          <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Your Skill
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Interviewing</a></li>
+          <li><a href="#">Video Producing</a></li>
+          <li><a href="#">Networking</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-4">
+      <div class="dropdown"> 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Grade
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+        <li><a href="#">5</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">1</a></li>
+        </ul>
+     </div>
+    </div>
+
+    </div>
+    </div>
+
+<div class="container-fluid">  
+      <div class ="row">
+
+     <div id="skill">   
+        <div class="col-xs-8">
+          <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Your Skill
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Interviewing</a></li>
+          <li><a href="#">Video Producing</a></li>
+          <li><a href="#">Networking</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-4">
+      <div class="dropdown"> 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Grade
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+        <li><a href="#">5</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">1</a></li>
+        </ul>
+     </div>
+    </div>
+
+    </div>
+    </div>
+
+
+<div class="container-fluid">  
+      <div class ="row">
+
+     <div id="skill">   
+        <div class="col-xs-8">
+          <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Your Skill
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Interviewing</a></li>
+          <li><a href="#">Video Producing</a></li>
+          <li><a href="#">Networking</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-4">
+      <div class="dropdown"> 
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Grade
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+        <li><a href="#">5</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">1</a></li>
+        </ul>
+     </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div id="addskill">
+    <div class="container-fluid">  
+      <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-plus-sign"></span> Add More
+      </button>
+    </div>  
+    </div>
+
+    </div>
+
+
+
+
+  <div id="current">
+      <div class="container-fluid">  
+       <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Flexible Routine</a></li>
+          <li><a href="#">Creative</a></li>
+          <li><a href="#">Networking</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid"> 
+       <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Flexible Routine</a></li>
+          <li><a href="#">Creative</a></li>
+          <li><a href="#">Networking</a></li>
+          </ul>
+        </div>
+         </div>
+      <div class="container-fluid"> 
+       <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Flexible Routine</a></li>
+          <li><a href="#">Creative</a></li>
+          <li><a href="#">Networking</a></li>
+          </ul>
+        </div>
+         </div>
+
+      <div class="container-fluid">  
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-plus-sign"></span> Add More
+        </button>
+      </div>  
+
+  </div>
+  </div>
+
+
+
+<div id="expect">
+      <div class="container-fluid">  
+       <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Salary</a></li>
+          <li><a href="#">Working environment</a></li>
+          <li><a href="#">Flexible working hours</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid"> 
+       <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Salary</a></li>
+          <li><a href="#">Working environment</a></li>
+          <li><a href="#">Flexible working hours</a></li>
+          </ul>
+        </div>
+         </div>
+      <div class="container-fluid"> 
+       <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Salary</a></li>
+          <li><a href="#">Working environment</a></li>
+          <li><a href="#">Flexible working hours</a></li>
+          </ul>
+        </div>
+         </div>
+
+      <div class="container-fluid">  
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-plus-sign"></span> Add More
+        </button>
+      </div>  
+
+  </div>
+  </div>
+
+
+<div id="wish">
+      <div class="container-fluid">  
+       <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Flexible Routine</a></li>
+          <li><a href="#">Creative</a></li>
+          <li><a href="#">Networking</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid"> 
+       <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Flexible Routine</a></li>
+          <li><a href="#">Creative</a></li>
+          <li><a href="#">Networking</a></li>
+          </ul>
+        </div>
+         </div>
+      <div class="container-fluid"> 
+       <div class="dropdown"> 
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Flexible Routine</a></li>
+          <li><a href="#">Creative</a></li>
+          <li><a href="#">Networking</a></li>
+          </ul>
+        </div>
+         </div>
+
+      <div class="container-fluid">  
+        <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-plus-sign"></span> Add More
+        </button>
+      </div>  
+
+  </div>
+  </div>
+
+
+  <div id="match">
+    <div class="container">
+      <ul class="list-group">
+      <li class="list-group-item">Advertising<span class="badge">75%</span></li>
+      <li class="list-group-item">Public Relationship<span class="badge">68%</span></li>
+      <li class="list-group-item">Marketing<span class="badge">53%</span></li>
+     </ul>
+   </div>
+   </div> 
+
+
+
+    <div id="start">  
+    <button type="button" class="btn btn-primary btn-block">Start</button>
+    </div>  
+
+    <div id="next">  
+    <button type="button" class="btn btn-primary btn-block">Next</button>
+    </div>  
+      
+    <div id="submit">  
+    <button type="button" class="btn btn-primary btn-block">Submit</button>
+    </div>  
+
+    <div id="gopivot">
+     <button type="button" class="btn btn-primary btn-block">GO PIVOT</button>
+    </div>
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
