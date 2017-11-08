@@ -16,7 +16,7 @@ $(function(){ // DON'T TOUCH ME
     });
 
     $("#gopivot").on("click",function(){
-        window.location.href = "main.html"; 
+        window.location.href = "homepage.html"; 
     });
 
     $(".jumbotron").hide(); 
