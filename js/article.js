@@ -10,12 +10,9 @@ $(function(){ // DON'T TOUCH ME
         window.location.href = "profile.html"; 
     });
 
-    $("#search").on("click",function(){
-        window.location.href = "search.html"; 
+    $("#homepage").on("click",function(){
+        window.location.href = "homepage.html"; 
     });
 
-  $("#Article5").on("click",function(){
-        window.location.href = "article.html"; 
-    });
 
   }); // DONT' TOUCH ME

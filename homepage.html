@@ -17,8 +17,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Raleway:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Raleway:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
   <style>
 
   h1 {
@@ -28,9 +29,10 @@
   }
   h2{
     font-family:'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 10px;
     text-align: left;
   }
+
   h3{
     font-family:'Cormorant Garamond', serif;
     font-size: 20px;
@@ -38,6 +40,7 @@
     color: #000;
     font-weight: bold;
   }
+
   .icon-bar {
     width: 100%; /* Full-width */
     background-color: #8491a3; /* Dark-grey background */
@@ -61,8 +64,9 @@
 }
 
 .active {
-    background-color: #8491a3; /* Add an active/current color */
+    background-color: black; /* Add an active/current color */
 }
+
 .caption{
     background: none repeat scroll 0 0 #FFFFFF;
     top: 10%;
@@ -72,56 +76,62 @@
     opacity: .7;
 }
 
+.content{
+
+height:1500px;
+}
 
 .thumbnail{
   position:relative;
 }
 
-.btn-circle.btn-lg {
-  width: 50px;
-  height: 50px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 25px;
-  float: right;
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
 }
 
-
 </style>
-  <body>
-    <div class="row">
-  <div class="col-xs-6"></div>
-  <div class="col-xs-6"></div>
-</div>
-</div>
-<div class= "page-header">
-    <div class= "btn-group pull-right">
-    <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-user"></i></button>
-    </div>
-    <h1> PIVOT</h1>
-  </div>
-  <div class= "second title">
-    <h2>Recently Published</h2>
-  </div>
-    <div class="row">
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <img src="journalism.jpg"/>
-      <div class="caption">
-        <h3>The Secret to Good Journalism</h3>
+ </head>
+
+  <body margin="auto">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6"></div>
+        <div class="col-xs-6"></div>
       </div>
-     </div>
-    </div>  
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <img src="Write three.jpg"/>
-      <div class="caption">
-        <h3>Are You Actually a Writer?</h3>
+      <div class= "page-header">
+        <h1> PIVOT</h1>
       </div>
-    </div>
-    </div> 
-    </div> 
+      <div class= "second title">
+        <h2>Recently Published</h2>
+      </div>
+
+<div id="content">
+
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="thumbnail text-center">
+            <img src="journalism.jpg"/>
+            <div class="caption">
+              <h3>The Secret to Good Journalism</h3>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-xs-6">
+          <div class="thumbnail text-center">
+            <img src="Write three.jpg"/>
+            <div class="caption">
+              <h3>Are You Actually a Writer?</h3>
+            </div>
+          </div>
+        </div> 
+      </div> 
+
  <div class="row">
   <div class="col-xs-6">
     <div class="thumbnail text-center">
@@ -131,6 +141,7 @@
       </div>
       </div>
       </div>
+
   <div class="col-xs-6">
     <div class="thumbnail text-center">
       <img src="Book one.png"/>
@@ -140,7 +151,30 @@
     </div>
     </div> 
 </div>
+
  <div class="row">
+  <div id="Article5" class="col-xs-6">
+    <div class="thumbnail text-center">
+      <img src="Nick Kokonas.jpeg" />
+      <div class="caption">
+        <h3>Get Inside with Nick Kokonas</h3>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-6">
+    <div class="thumbnail text-center">
+      <img src="collaboration.jpg" />
+      <div class="caption">
+      <h3 style="margin-top:5px;">The Skills Product Managers Need</h3>
+      </div>
+    </div>
+    </div>  
+</div>
+</div>
+
+<div class="row">
   <div class="col-xs-6">
     <div class="thumbnail text-center">
       <img src="Nick Kokonas.jpeg" />
@@ -149,23 +183,29 @@
       </div>
     </div>
   </div>
+
   <div class="col-xs-6">
     <div class="thumbnail text-center">
       <img src="collaboration.jpg" />
       <div class="caption">
-      <h3>The Skills Product Managers Need</h3>
+      <h3 style="margin-top:5px;">The Skills Product Managers Need</h3>
       </div>
     </div>
     </div>  
 </div>
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</div>
 
+</div>
+<!-- Add icon library -->
+
+
+<div class="footer">
 <div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-home"></i></a> 
-  <a href="#"><i class="fa fa-globe"></i></a> 
-  <a href="#"><i class="fa fa-search"></i></a> 
-  <a href="#"><i class="fa fa-user"></i></a>
+  <a class="active" href="#"><i id="homepage" class="fa fa-home"></i></a> 
+  <a href="#"><i id="pivottoday" class="fa fa-globe"></i></a> 
+  <a href="#"><i id="search" class="fa fa-search"></i></a> 
+  <a href="#"><i id="profilepage" class="fa fa-user"></i></a>
+</div>
 </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -173,6 +213,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/homepagescript.js" type="text/javascript"></script>
   </body>
 </html>
