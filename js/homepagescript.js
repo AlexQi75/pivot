@@ -14,9 +14,12 @@ $(function(){ // DON'T TOUCH ME
         window.location.href = "search.html"; 
     });
 
+<<<<<<< HEAD
  $("#article5").on("click",function(){
         window.location.href = "article.html"; 
     });
+=======
+>>>>>>> master
 
 
   }); // DONT' TOUCH ME
