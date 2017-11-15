@@ -13,13 +13,10 @@ $(function(){ // DON'T TOUCH ME
     $("#search").on("click",function(){
         window.location.href = "search.html"; 
     });
-
-<<<<<<< HEAD
+  
  $("#article5").on("click",function(){
         window.location.href = "article.html"; 
     });
-=======
->>>>>>> master
 
 
   }); // DONT' TOUCH ME
