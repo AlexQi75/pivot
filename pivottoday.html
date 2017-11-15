@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>PIVOT Prototype</title>
+    <title>PIVOT today</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -17,24 +17,33 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Raleway:400,800" rel="stylesheet">
   <style>
 
   h1 {
     font-family:'Raleway', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
+  }
+  h2{
+    font-family:'Raleway', sans-serif;
+    font-size: 8px;
+    text-align: left;
+    margin: 
   }
   h3{
     font-family:'Cormorant Garamond', serif;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+    color: #000;
+    font-weight: bold;
   }
   .icon-bar {
     width: 100%; /* Full-width */
     background-color: #8491a3; /* Dark-grey background */
     overflow: auto; /* Overflow due to float */
+    position:fixed;
+    bottom: 0;
 }
 
 .icon-bar a {
@@ -45,112 +54,144 @@
     transition: all 0.3s ease; /* Add transition for hover effects */
     color: white; /* White text color */
     font-size: 36px; /* Increased font size */
+    z-index: -2;
+
 }
 
 .icon-bar a:hover {
-    background-color: #000; /* Add a hover color */
+    background-color: #000 /* Add a hover color */
 }
 
 .active {
-    background-color: #8491a3; /* Add an active/current color */
+    background-color: black; /* Add an active/current color */
 }
 .caption{
     background: none repeat scroll 0 0 #FFFFFF;
-    opacity: 0.5;
-    margin: -54px 20px 12px; 
-    position:relative;
+    top: 7%;
+    bottom: 7%;
+    left: auto;
+    width: 100%;
+
+    opacity: .7;
 }
+
+
 .thumbnail{
   position:relative;
-  margin: 54px 20px 12px;
 }
-.btn-circle.btn-lg {
-  width: 50px;
-  height: 50px;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 25px;
-  float: right;
+
+
+.content {
+  position: absolute;
+
 }
+
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+.active{
+  background-color: black;
+  text-align: center;
+  color:black;
+  font-weight:bold;
+
 </style>
-  <body>
-    <div class="row">
-  <div class="col-xs-6"></div>
-  <div class="col-xs-6"></div>
-</div>
-</div>
-<div class= "page-header">
-<h1> PIVOT</h1>
-    <button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-user"></i></button>
-  </div>
-    <div class="row">
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <div class="view overlay hm-blue-light">
-    <div class="mask flex-center">
-        <p class="white-text"> Read </p>
-    </div>
-</div>
-      <img src="journalism.jpg" class="img-fluid" alt=""/>
-      <div class="caption">
-        <h3>The 6 Things Journalists Never Tell You</h3> 
-    </div>
-  </div>
-</div>
-  <div class="col-xs-6">
-    <div class="thumbnail text-center">
-      <img src="Write three.jpg" />
-      <div class="caption">
-      <h3>Are You Actually a Writer?</h3>
+  </head>
+  <body margin="auto">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6"></div>
+        <div class="col-xs-6"></div>
       </div>
-    </div>
-    </div>  
-</div>
+      <div class= "page-header">
+        <h1> PIVOT TODAY</h1>
+      </div>
+     
+<div id="content">
+
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="thumbnail text-center">
+            <img src="marketing.jpg"/>
+            <div class="caption">
+              <h3>How to keep your marketing job in the AI Revolution?</h3>
+            </div>
+          </div>
+        </div>  
+
+        <div class="col-xs-6">
+          <div class="thumbnail text-center">
+            <img src="satya.jpg"/>
+            <div class="caption">
+              <h3>How Satya Nadella helped Microsoft get its groove back?</h3>
+            </div>
+          </div>
+        </div> 
+     </div>
+
+
  <div class="row">
   <div class="col-xs-6">
     <div class="thumbnail text-center">
-      <img src="Cheryl.jpg" />
+      <img src="editor.jpg"/>
       <div class="caption">
-        <h3>A Boston's Book Editor's Advice</h3>
+        <h3>A Book Editor's Advice</h3>
       </div>
-    </div>
-  </div>
+      </div>
+      </div>
+
   <div class="col-xs-6">
     <div class="thumbnail text-center">
-      <img src="Book one.png" />
+      <img src="package.jpg"/>
     <div class="caption">
-      <h3>Is Freelance Right for You?</h3>
+      <h3 style="margin-top:5px;">The 4th Industrial Revolution</h3>
       </div>
     </div>
     </div> 
 </div>
+
  <div class="row">
   <div class="col-xs-6">
     <div class="thumbnail text-center">
-      <img src="Nick Kokonas.jpeg" />
+      <img src="digital.jpg" />
       <div class="caption">
-        <h3>Get Inside with Nick Kokonas</h3>
+        <h3 style="margin-top:5px;">The Rise of Programmatic Advertising</h3>
       </div>
     </div>
   </div>
+
   <div class="col-xs-6">
     <div class="thumbnail text-center">
-      <img src="collaboration.jpg" />
+      <img src="vr.jpg" />
       <div class="caption">
-      <h3>The One Skill Product Managers Need</h3>
+      <h3 style="margin-top:5px;">When Virtual Reality Comes In Mental Health</h3>
       </div>
     </div>
     </div>  
+
+ 
+</div>
+
+
+</div>
 </div>
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+<div class="footer">
 <div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-home"></i></a> 
-  <a href="#"><i class="fa fa-globe"></i></a> 
-  <a href="#"><i class="fa fa-search"></i></a> 
-  <a href="#"><i class="fa fa-user"></i></a>
+  <a href="#"><i id="homepage" class="fa fa-home"></i></a> 
+  <a class="active" href="#"><i id="pivottoday" class="fa fa-globe"></i></a> 
+  <a href="#"><i id="search" class="fa fa-search"></i></a> 
+  <a href="#"><i id="profilepage" class="fa fa-user"></i></a>
+</div>
 </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -158,6 +199,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/pivottodayscript.js" type="text/javascript"></script>
   </body>
 </html>

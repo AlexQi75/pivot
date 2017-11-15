@@ -1,9 +1,7 @@
-// get scripting
 $(function(){ // DON'T TOUCH ME
 
-
-    $("#pivottoday").on("click",function(){
-        window.location.href = "pivottoday.html"; 
+    $("#homepage").on("click",function(){
+        window.location.href = "homepage.html"; 
     });
 
     $("#profilepage").on("click",function(){
@@ -16,4 +14,15 @@ $(function(){ // DON'T TOUCH ME
 
 
 
-  }); // DONT' TOUCH ME
+
+
+
+
+
+
+
+
+
+
+
+	}); // DONT' TOUCH ME
