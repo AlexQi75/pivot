@@ -20,7 +20,43 @@
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Raleway:400,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+<script type="text/javascript">
+  
+$(function(){ // DON'T TOUCH ME
+
+
+    $("#homepage").on("click",function(){
+        window.location.href = "homepage.html"; 
+    });
+
+    $("#pivottoday").on("click",function(){
+        window.location.href = "pivottoday.html"; 
+    });
+
+    $("#search").on("click",function(){
+        window.location.href = "search.html"; 
+    });
+
+    $("#profilepage").on("click",function(){
+        window.location.href = "profile.html"; 
+    });
+
+    $("#article1").on("click",function(){
+        window.location.href = "journalism.html"; 
+    });
+
+
+  }); // DONT' TOUCH ME
+
+</script>     
+
 <style>
 
 
@@ -99,9 +135,9 @@ h4{
    text-align: center;
 }
 
-.content{
+#content{
 
-height:1500px;
+height:380px;
 }
 
 .thumbnail{
@@ -117,8 +153,9 @@ height:1500px;
     opacity: .7;
 }
 
-.container-fluid{
-	height: 800px;
+
+#journalismhead{
+  margin-top:-1.5em;
 }
 
 </style>
@@ -133,14 +170,15 @@ height:1500px;
       <div class= "page-header">
         <h1> PIVOT</h1>
       </div>
+    </div>
 
-    <div class="container">
+    <div id="journalismhead" class="container">
       <h2>Journalism</h2>
       <p>Journalists collect and share information about people, events, and trends, as well as write about sports, business, politics, or art. This career is very flexible and offers several specializations. For more information on the reasons to become a journalist, read on.</p>
 </div>
 
 <div class="container">
-       <img src="industryinfographic.jpg" width= "250" height= "350" class="img-responsive" alt="industryinfographic">
+       <img src="industryinfographic.jpg" width= "600" height= "500" class="img-responsive" alt="industryinfographic">
 </div>
 
 <div class= "second title">
@@ -151,7 +189,7 @@ height:1500px;
 
       <div class="row">
         <div class="col-xs-6">
-          <div class="thumbnail text-center">
+          <div id="article1" class="thumbnail text-center">
             <img src="journalism.jpg"/>
             <div class="caption">
               <h3>The Secret to Good Journalism</h3>
@@ -195,7 +233,7 @@ height:1500px;
 <div class="icon-bar">
   <a href="#"><i id="homepage" class="fa fa-home"></i></a> 
   <a href="#"><i id="pivottoday" class="fa fa-globe"></i></a> 
-  <a class="active" href=""><i id="search" class="fa fa-search"></i></a> 
+  <a href="#"><i id="search" class="fa fa-search"></i></a> 
   <a href="#"><i id="profilepage" class="fa fa-user"></i></a>
 </div>
 </div>

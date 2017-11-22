@@ -14,5 +14,8 @@ $(function(){ // DON'T TOUCH ME
         window.location.href = "homepage.html"; 
     });
 
+    $("#industry").on("click",function(){
+        window.location.href = "industry.html"; 
+    });
 
   }); // DONT' TOUCH ME
