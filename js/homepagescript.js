@@ -14,9 +14,12 @@ $(function(){ // DON'T TOUCH ME
         window.location.href = "search.html"; 
     });
   
- $("#article5").on("click",function(){
+    $("#article5").on("click",function(){
         window.location.href = "article.html"; 
     });
 
+    $("#article1").on("click",function(){
+        window.location.href = "journalism.html"; 
+    });
 
   }); // DONT' TOUCH ME
