@@ -29,20 +29,58 @@
 
   	<script type="text/javascript">
     $(function(){ 
+        var i = 0; // an incrementing variable
+        var notes = []; //array to store the text value per note
         var textSelection;
         
-        $(document).on("touchend mouseup", function (e) {
+        $("#text").on("touchend mouseup", function (e) {
+            
             var selected = getSelection();
             var range = selected.getRangeAt(0);
-            console.log(range);
             if(selected.toString().length > 1){
+                $("#note").show(); // show textbox
+                $("#save").text("Save");
+                $("#notes").hide(); // hide list of notes you've taken
+                i++; // Add +1 to "i"
                 var newNode = document.createElement("mark");
+                newNode.setAttribute('id',i); // set i as the id
                 range.surroundContents(newNode);  
-                $("#selection").text("Write down your notes here...");
-                $('#myModal').modal('show');
+                $("#myModal h2").text("Your Selection"); // update h2 in modal
+                $("#quote").text('"'+selected+'"').show(); // update #seleciton in modal
+                $("#note").val("");
+                $("#myModal").modal('show');
+                notes[i] = ""; //set a new variable
             }
             selected.removeAllRanges();
         });
+        
+        $("#save").on("click",function(){
+            closeModal();
+        })
+        
+        function closeModal(){
+            notes[i] = $("#note").val();
+            console.log(notes[i]);
+        }
+        
+        $("#seenotes").on("click",function(){
+            $("#notes").empty().show(); // clears out the div #notes
+            $("#save").text("Close"); // renames Close/Save button
+            $("#note").hide(); // hides textbox
+            $("#myModal").modal('show');
+            $("#myModal h2").text("Your Notes");
+            $("#quote").hide();
+            
+            if (notes.length < 1){
+                $("#notes").append('<p>No notes added.</p>'); 
+            } else {
+                for (var index in notes) { 
+                    $("#notes").append('<p>Note '+index + ': ' + notes[index]+'</p>');
+                }
+            }
+            
+        });
+        
         function getSelection() {
             var seltxt = '';
             if (window.getSelection) { 
@@ -67,12 +105,31 @@
             window.location.href = "homepage.html"; 
         });
 
-        $("#back").on("click",function(){
+        $("#backtop").on("click",function(){
             window.location.href = "homepage.html"; 
         });
-        $("#more").on("click",function(){
-            window.location.href = "journalism.html"; 
-        });
+
+
+        // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("gotop").style.display = "block";
+    } else {
+        document.getElementById("gotop").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+
+$("#gotop").on("click",function(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+
+
 
 
   	}); 
@@ -132,7 +189,7 @@
   margin: 0 auto;
 }
 #text{
-  height: 1600px;
+  height: 1750px;
 }
 .footer{
    position: fixed;
@@ -143,11 +200,41 @@
    text-align: center;
 }
 
-#twobuttons{
-   margin-top:-140px; 
-   margin-left:18px;
+#backtop{
+  margin-top:30px;
+  margin-bottom:-40px;
+  margin-left:10px;
+  font-size: 20px;
+}
+
+#seenotes{
+  width:300px;
+  margin-left:30px;
+  margin-top:-350px;
+  position:relative;
 
 }
+
+
+#gotop{
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #8491a3;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#gotop:hover {
+  background-color: black;
+}
+
 </style>
 
 <body>
@@ -156,6 +243,9 @@
   <div class="row">
   <div class="col-xs-6"></div>
 </div>
+  <div id="backtop">
+   <span style="cursor:pointer"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+  </div>
   <h1>PIVOT</h1>
   <div>
     <h2>Nick Kokonas</h2>
@@ -183,13 +273,11 @@
   <p><b>What has been the craziest night here?</b></p>
   <p>[Laughs] I can’t tell you that. No, no, no. I’ll tell you afterwards … What I like to watch is when we’ve got people who don’t know each other in such a small intimate environment. You’ll have like six people over there and four people over there and pretty soon all of their chairs are turned around. You’ve got people from Europe chatting with people from Cleveland. </p>
 </div>
-    
-<div id="twobuttons" class="container-fluid">
- <button id="back" type="button" class="btn btn-default">back to main page</button>
- <button id="more" type="button" class="btn btn-default">read more about journalism</button>
-</div>
 
-<!-- Modal -->
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-default" id="seenotes">See Your Notes</button>  
+
+<<!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -200,7 +288,12 @@
         <h4 class="modal-title">Save Note</h4>
       </div>
       <div class="modal-body">
-        <p id="selection">Some text in the modal.</p>
+        <h2>Your selection</h2>
+        <p id="quote"></p>
+        <div id="notes"></div>
+        <div class="form-group">
+            <textarea class="form-control" placeholder="Add Note" rows="5" id="note"></textarea>
+        </div>         
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal" id="save">Save</button>
@@ -209,6 +302,9 @@
 
   </div>
 </div>
+
+<button id="gotop"><span class="glyphicon">&#xe260;</span></button>
+
 
 <div class="footer">
 <div class="icon-bar">
