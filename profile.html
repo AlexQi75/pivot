@@ -46,8 +46,8 @@
   h4 {
     font-family:'Raleway', sans-serif;
     font-size: 12px;
-    height:15px;
-    margin:0;
+    height:3px;
+    margin-left:7px;
   }
 
   p{
@@ -174,14 +174,15 @@
 
 #takeandadd {
 width:100%;
-margin-top:5em;
+margin-top:3em;
 }
 
 
 #industry {
-  margin: -1.5em 1em;
-  background-color:transparent;
-  height:3em;
+ border-top-left-radius:0;
+ border-top-right-radius:0; 
+ border-bottom-left-radius:4px;
+ border-bottom-right-radius:4px; 
 
 }
 
@@ -195,6 +196,7 @@ margin-top:5em;
 
 #gopivot {
   margin:1em;
+
 }
 
 #edit {
@@ -203,6 +205,7 @@ margin-top:5em;
   margin-top:-4.7em;
   background-color:transparent;
 }
+
 
 
 
@@ -230,34 +233,24 @@ margin-top:5em;
       </button> 
     </div>
 
-
+  <h4 align="left">Your Industries:</h4>
   <div id="match">
     <div class="container">
-      <h4 align="left"> Matched Industries:</h4>
+    
       <ul class="list-group">
       <li class="list-group-item">Advertising<span class="badge">75%</span></li>
       <li class="list-group-item">Public Relationship<span class="badge">68%</span></li>
       <li class="list-group-item">Marketing<span class="badge">53%</span></li>
+      <div class="dropdown"><li class="list-group-item" data-toggle="dropdown" class="dropdown-toggle" href="#" id="industry"><span id="selected">Choose another industry</span><span class="caret"></span></li>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+          <li><a href="#" data-value="Journalism">Product Managing</a></li>
+          <li><a href="#" data-value="Public Relationship">Consulting</a></li>
+          <li><a href="#" data-value="Advertising">Training</a></li>
+        </ul>
      </ul>
+    </div>
    </div>
-   </div> 
-
-
-    <div id="industry">
-     <div class="dropdown"> 
-
-    <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" href="#">
-      <span id="selected">Choose another industry outside matched results</span><span class="caret"></span></button>
-
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-    <li><a href="#" data-value="Journalism">Product Managing</a></li>
-    <li><a href="#" data-value="Public Relationship">Consulting</a></li>
-    <li><a href="#" data-value="Advertising">Training</a></li>
-    </ul>
-    </div>
-    </div>
-
-
+   </div>
 
 
 <div id="takeandadd" class="row">

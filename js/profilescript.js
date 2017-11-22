@@ -64,7 +64,7 @@ $(function(){ // DON'T TOUCH ME
     });
 
   	
-   $("#add").on("click",function(){
+   $("#add").on("click",function(){ 
        $("#industry").fadeIn(); 
        $("#gopivot").fadeIn(); 
 
@@ -80,7 +80,6 @@ $(function(){ // DON'T TOUCH ME
     $("#gopivot").on("click",function(){
         window.location.href = "homepage.html"; 
     });
-
 
   $("#profilepage").on('click',function(){
 		$(".abstracts1").fadeIn(); 

@@ -12,7 +12,9 @@ $(function(){ // DON'T TOUCH ME
         window.location.href = "search.html"; 
     });
 
-
+    $("#marketing").on("click",function(){
+        window.location.href = "marketing.html"; 
+    });
 
 
 

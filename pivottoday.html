@@ -25,19 +25,28 @@
     font-size: 40px;
     text-align: center;
   }
-  h2{
+  h2 {
     font-family:'Raleway', sans-serif;
     font-size: 8px;
     text-align: left;
     margin: 
   }
-  h3{
+  h3 {
     font-family:'Cormorant Garamond', serif;
     font-size: 20px;
     text-align: center;
     color: #000;
-    font-weight: bold;
+    font-weight: bold;}
+ 
+  #daily{
+  margin-left:20px;
+  margin-bottom: -10px;
+  margin-top: -10px;
+  font-family:'Raleway', sans-serif;
+  font-size: 10px;
   }
+
+
   .icon-bar {
     width: 100%; /* Full-width */
     background-color: #8491a3; /* Dark-grey background */
@@ -84,6 +93,7 @@
 #content {
   position: relative;
   height:880px;
+  padding:1em;
 
 }
 
@@ -102,36 +112,41 @@
   color:black;
   font-weight:bold;
 
+
 </style>
   </head>
   <body margin="auto">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-6"></div>
-        <div class="col-xs-6"></div>
-      </div>
-      <div class= "page-header">
-        <h1> PIVOT TODAY</h1>
-      </div>
-    </div>
+
+<div class= "page-header">
+  <h1> PIVOT TODAY</h1>
+</div>
+
+<div id="daily">
+  <h4>Daily Updates:</h4>
+</div>
      
+
+
+
 <div id="content">
 
       <div class="row">
         <div class="col-xs-6">
-          <div class="thumbnail text-center">
+          <div id="marketing" class="thumbnail text-center">
             <img src="marketing.jpg"/>
             <div class="caption">
-              <h3>How to keep your marketing job in the AI Revolution?</h3>
+              <span style="cursor:pointer"><h3>How to keep your marketing job in the AI Revolution?</h3></span>
             </div>
           </div>
         </div>  
+
+
 
         <div class="col-xs-6">
           <div class="thumbnail text-center">
             <img src="satya.jpg"/>
             <div class="caption">
-              <h3>How Satya Nadella helped Microsoft get its groove back?</h3>
+              <span style="cursor:pointer"> <h3>How Satya Nadella helped Microsoft get its groove back?</h3></span>
             </div>
           </div>
         </div> 
@@ -143,7 +158,7 @@
     <div class="thumbnail text-center">
       <img src="editor.jpg"/>
       <div class="caption">
-        <h3>A Book Editor's Advice</h3>
+        <span style="cursor:pointer"> <h3>A Book Editor's Advice</h3></span>
       </div>
       </div>
       </div>
@@ -152,7 +167,7 @@
     <div class="thumbnail text-center">
       <img src="package.jpg"/>
     <div class="caption">
-      <h3 style="margin-top:5px;">The 4th Industrial Revolution</h3>
+       <span style="cursor:pointer"><h3 style="margin-top:5px;">The 4th Industrial Revolution</h3></span>
       </div>
     </div>
     </div> 
@@ -163,7 +178,7 @@
     <div class="thumbnail text-center">
       <img src="digital.jpg" />
       <div class="caption">
-        <h3 style="margin-top:5px;">The Rise of Programmatic Advertising</h3>
+         <span style="cursor:pointer"><h3 style="margin-top:5px;">The Rise of Programmatic Advertising</h3></span>
       </div>
     </div>
   </div>
@@ -172,7 +187,7 @@
     <div class="thumbnail text-center">
       <img src="vr.jpg" />
       <div class="caption">
-      <h3 style="margin-top:5px;">When Virtual Reality Comes In Mental Health</h3>
+       <span style="cursor:pointer"><h3 style="margin-top:5px;">When Virtual Reality Comes In Mental Health</h3></span>
       </div>
     </div>
     </div>  
