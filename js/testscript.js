@@ -11,6 +11,7 @@ $(function(){ // DON'T TOUCH ME
         $(this).hide();
         $("#next").fadeIn();
         $("#bighead").hide();
+  
 
 
     });
@@ -27,7 +28,7 @@ $(function(){ // DON'T TOUCH ME
 
 
    
-
+    $("#thankyou").hide();
     $("#skillset").hide();  
     $("#current").hide();  
     $("#expect").hide();  
@@ -38,7 +39,7 @@ $(function(){ // DON'T TOUCH ME
     var q2 = "List your skills and grade them.";
     var q3 = "What do you like about your current job?";
     var q4 = "What do you expect for your next job?";
-    var q5 = "What current skills you wish to use for next job?";
+    var q5 = "What current skills do you wish to use for your next job?";
     var q6 = "industries that you have over 50% compatibility to pivot into:"
     
     // change progress bar to 30%
@@ -112,6 +113,9 @@ $(function(){ // DON'T TOUCH ME
          $("#question").text("Industries that you have over 50% compatibility to pivot into:");
          $("#match").fadeIn();
          $("#gopivot").fadeIn();
+         $(".jumbotron"). hide();
+         $("#thankyou").fadeIn();
+
      });
 
 }); // DONT' TOUCH ME
