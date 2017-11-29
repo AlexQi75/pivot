@@ -108,7 +108,9 @@ $(function(){ // DON'T TOUCH ME
         window.location.href = "search.html"; 
     });
 
-
+    $("#logout").on("click",function(){
+        window.location.href = "index.html"; 
+    });
 
 
 }); // DONT' TOUCH ME
