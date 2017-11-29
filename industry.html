@@ -140,7 +140,7 @@ h4{
 
 #content{
 
-height:380px;
+height:580px;
 padding: 10px 10px;
 }
 
@@ -150,11 +150,12 @@ padding: 10px 10px;
 }
 
 .caption{
-	 background: none repeat scroll 0 0 #FFFFFF;
-    top: 10%;
-    left: auto; 
+    background: none repeat scroll 0 0 #FFFFFF;
+    top: 7%;
+    bottom: 7%;
+    left: auto;
     width: 100%;
-    position: absolute;
+
     opacity: .7;
 }
 
@@ -163,6 +164,20 @@ padding: 10px 10px;
   margin-top:-1.5em;
 }
 
+  h4{
+    font-size:18px;
+    font-family:'Raleway', sans-serif;
+  }
+
+
+#recently{
+  margin-left:5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+
+
+}
 
 </style>
   </head>
@@ -187,8 +202,8 @@ padding: 10px 10px;
        <img src="industryinfographic5.jpg" width= "600" height= "500" class="img-responsive" alt="industryinfographic">
 </div>
 
-<div class= "second title">
-        <h4>Recently Published</h4>
+<div id="recently">
+        <h4>Recently Published:</h4>
       </div>
 
 <div id="content">
@@ -198,7 +213,7 @@ padding: 10px 10px;
           <div id="article1" class="thumbnail text-center">
             <img src="journalism.jpg"/>
             <div class="caption">
-              <h3>The Secret to Good Journalism</h3>
+               <span style="cursor:pointer"><h3>The Secret to Good Journalism</h3></span>
             </div>
           </div>
         </div>  
@@ -207,7 +222,7 @@ padding: 10px 10px;
           <div class="thumbnail text-center">
             <img src="write3.jpg"/>
             <div class="caption">
-              <h3>Are You Actually a Writer?</h3>
+              <span style="cursor:pointer"><h3>Are You Actually a Writer?</h3></span>
             </div>
           </div>
         </div> 
@@ -218,7 +233,7 @@ padding: 10px 10px;
     <div class="thumbnail text-center">
       <img src="cheryl.jpg"/>
       <div class="caption">
-        <h3>Journalist or Memoirist?</h3>
+        <span style="cursor:pointer"><h3>Journalist or Memoirist?</h3></span>
       </div>
       </div>
       </div>
@@ -227,7 +242,7 @@ padding: 10px 10px;
     <div class="thumbnail text-center">
       <img src="book1.png"/>
     <div class="caption">
-      <h3>Is Freelance Right for You?</h3>
+      <span style="cursor:pointer"><h3>Is Freelance Right for You?</h3></span>
       </div>
     </div>
     </div> 
